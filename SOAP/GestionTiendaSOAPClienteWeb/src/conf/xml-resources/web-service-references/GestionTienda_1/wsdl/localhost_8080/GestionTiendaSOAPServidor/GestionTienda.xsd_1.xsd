@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.0 (wsit240-7e98ff4; 2017-08-03T21:19:54+0200) JAXWS-RI/2.3.0 JAXWS-API/2.3.0 JAXB-RI/2.3.0 JAXB-API/2.3.0 svn-revision#unknown. --><xs:schema xmlns:tns="http://servidortienda/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servidortienda/">
+
+<xs:element name="exportProducto" type="tns:exportProducto"/>
+
+<xs:element name="exportProductoResponse" type="tns:exportProductoResponse"/>
+
+<xs:element name="exportTienda" type="tns:exportTienda"/>
+
+<xs:element name="exportTiendaResponse" type="tns:exportTiendaResponse"/>
+
+<xs:element name="getProducto" type="tns:getProducto"/>
+
+<xs:element name="getProductoResponse" type="tns:getProductoResponse"/>
+
+<xs:element name="getTienda" type="tns:getTienda"/>
+
+<xs:element name="getTiendaResponse" type="tns:getTiendaResponse"/>
+
+<xs:element name="importProducto" type="tns:importProducto"/>
+
+<xs:element name="importProductoResponse" type="tns:importProductoResponse"/>
+
+<xs:element name="importTienda" type="tns:importTienda"/>
+
+<xs:element name="importTiendaResponse" type="tns:importTiendaResponse"/>
+
+<xs:element name="producto" type="tns:producto"/>
+
+<xs:element name="setProducto" type="tns:setProducto"/>
+
+<xs:element name="setProductoResponse" type="tns:setProductoResponse"/>
+
+<xs:element name="setTienda" type="tns:setTienda"/>
+
+<xs:element name="setTiendaResponse" type="tns:setTiendaResponse"/>
+
+<xs:element name="tienda" type="tns:tienda"/>
+
+<xs:complexType name="importTienda">
+<xs:sequence>
+<xs:element name="base64" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="importTiendaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTienda">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTiendaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tienda" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tienda">
+<xs:sequence>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="telefono" type="xs:int" minOccurs="0"/>
+<xs:element name="productos" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="producto" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="nombre" type="xs:string"/>
+</xs:complexType>
+
+<xs:complexType name="producto">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="precio" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute name="ean" type="xs:string"/>
+</xs:complexType>
+
+<xs:complexType name="exportTienda">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="exportTiendaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getProducto">
+<xs:sequence>
+<xs:element name="EAN" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getProductoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:producto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="importProducto">
+<xs:sequence>
+<xs:element name="base64" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="importProductoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setTienda">
+<xs:sequence>
+<xs:element name="tienda" type="tns:tienda" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setTiendaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setProducto">
+<xs:sequence>
+<xs:element name="producto" type="tns:producto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setProductoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="exportProducto">
+<xs:sequence>
+<xs:element name="EAN" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="exportProductoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

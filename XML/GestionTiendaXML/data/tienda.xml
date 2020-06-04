@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Tienda nombre="Amazon">
+    <direccion>Castellana 11, Madrid 28020</direccion>
+    <telefono>663811478</telefono>
+    <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="65V7A6GA8912">
+        <nombre>Mavic Pro 2</nombre>
+        <descripcion>Dron</descripcion>
+        <precio>1500</precio>
+    </productos>
+    <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="121212">
+        <nombre>w12121</nombre>
+        <descripcion>12121</descripcion>
+        <precio>123</precio>
+    </productos>
+    <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="qwqwqw">
+        <nombre>qwqwqw</nombre>
+        <descripcion>qwqwq</descripcion>
+        <precio>1231313</precio>
+    </productos>
+    <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="121212">
+        <nombre>1212</nombre>
+        <descripcion>1212</descripcion>
+        <precio>12121</precio>
+    </productos>
+    <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="dddd">
+        <nombre>dddd</nombre>
+        <descripcion>ddd</descripcion>
+        <precio>123</precio>
+    </productos>
+</Tienda>

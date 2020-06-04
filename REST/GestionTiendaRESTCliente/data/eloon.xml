@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tienda nombre="Tesla">
+    <direccion>LA</direccion>
+    <telefono>7387321</telefono>
+    <productos>
+        <producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="9012012">
+            <nombre>Model X</nombre>
+            <descripcion>Cool</descripcion>
+            <precio>21000.0</precio>
+        </producto>
+    </productos>
+</tienda>

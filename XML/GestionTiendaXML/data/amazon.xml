@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Tienda nombre="Amazon">
+    <direccion>Castellana 11, Madrid 28020</direccion>
+    <telefono>663811478</telefono>
+    <productos>
+        <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="89219212">
+            <nombre>iPhone</nombre>
+            <descripcion>Telefono</descripcion>
+            <precio>999</precio>
+        </productos>
+        <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="28912812">
+            <nombre>Xiaomi</nombre>
+            <descripcion>Telefono</descripcion>
+            <precio>299</precio>
+        </productos>
+    </productos>
+</Tienda>

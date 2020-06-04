@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tienda nombre="Apple">
+    <direccion>Puerta del SOl</direccion>
+    <telefono>8912121</telefono>
+    <productos>
+        <producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="912182912">
+            <nombre>Apple</nombre>
+            <descripcion>799</descripcion>
+            <precio>799.0</precio>
+        </producto>
+    </productos>
+</tienda>

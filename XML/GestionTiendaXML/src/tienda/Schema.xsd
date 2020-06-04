@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+        
+        <xs:simpleType name="EAN">
+            <xs:restriction base="xs:token">
+                <xs:maxLength value="12"/>
+            </xs:restriction>
+        </xs:simpleType>
+        
+        <xs:simpleType name="telefono">
+            <xs:restriction base="xs:token">
+                <xs:maxLength value="9"/>
+            </xs:restriction>
+        </xs:simpleType>
+
+        <xs:complexType name="producto"> 
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="descripcion" type="xs:string"/>
+                <xs:element name="precio" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="ean" type="EAN"/> 
+        </xs:complexType>
+
+        <xs:element name="tienda"> 
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="direccion" type="xs:string"/>
+                    <xs:element name="telefono" type="telefono"/>
+                    <xs:element name="productos"> 
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="producto" type="producto" minOccurs="0" maxOccurs="unbounded"/> 
+                            </xs:sequence>    
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="nombre" type="xs:string"/> 
+            </xs:complexType>
+        </xs:element>
+        
+    </xs:schema>

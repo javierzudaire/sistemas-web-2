@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-GestionTienda" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GestionTienda"/>
+        <property name="wsdl-GestionTienda" location="xml-resources/web-service-references/GestionTienda/wsdl/localhost_8080/GestionTiendaSOAPServidor/GestionTienda.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GestionTienda" destdir="${build.generated.dir}/jax-wsCache/GestionTienda" wsdl="${wsdl-GestionTienda}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/GestionTiendaSOAPServidor/GestionTienda?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-GestionTienda}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GestionTienda"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GestionTienda">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GestionTienda" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/GestionTienda"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/servidortienda"/>
+    </target>
+    <target name="wsimport-client-GestionTienda_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GestionTienda_1"/>
+        <property name="wsdl-GestionTienda_1" location="xml-resources/web-service-references/GestionTienda_1/wsdl/localhost_8080/GestionTiendaSOAPServidor/GestionTienda.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GestionTienda_1" destdir="${build.generated.dir}/jax-wsCache/GestionTienda_1" wsdl="${wsdl-GestionTienda_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/GestionTiendaSOAPServidor/GestionTienda?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-GestionTienda_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GestionTienda_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GestionTienda_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GestionTienda_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/GestionTienda_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/servidortienda"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-GestionTienda, wsimport-client-GestionTienda_1"/>
+</project>

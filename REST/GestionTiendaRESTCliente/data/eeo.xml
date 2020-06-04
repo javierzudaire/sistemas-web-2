@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tienda nombre="Amazon">
+    <direccion>Puerta del Sol</direccion>
+    <telefono>232</telefono>
+    <productos>
+        <producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="18982912">
+            <nombre>iPhone</nombre>
+            <descripcion>Telefono</descripcion>
+            <precio>899.0</precio>
+        </producto>
+        <producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="98122">
+            <nombre>iPad</nombre>
+            <descripcion>Hooass</descripcion>
+            <precio>21212.0</precio>
+        </producto>
+    </productos>
+</tienda>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tienda nombre="Apple">
+    <direccion>Puerta del Sol</direccion>
+    <telefono>917255345</telefono>
+    <productos>
+        <producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="091201921">
+            <nombre>iPhone XS</nombre>
+            <descripcion>Telefono movil</descripcion>
+            <precio>899.0</precio>
+        </producto>
+        <producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="91091212012">
+            <nombre>iPad</nombre>
+            <descripcion>Tableta</descripcion>
+            <precio>699.99</precio>
+        </producto>
+    </productos>
+</tienda>

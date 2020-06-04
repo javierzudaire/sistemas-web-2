@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<producto ean="9012012">
+    <nombre>Model X</nombre>
+    <descripcion>Cool</descripcion>
+    <precio>21000.0</precio>
+</producto>

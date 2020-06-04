@@ -1,0 +1,37 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT tienda (direccion,telefono,productos)>
+<!ATTLIST tienda
+  xmlns CDATA #FIXED ''
+  nombre NMTOKEN #REQUIRED>
+
+<!ELEMENT direccion (#PCDATA)>
+<!ATTLIST direccion
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT telefono (#PCDATA)>
+<!ATTLIST telefono
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT productos (producto)+>
+<!ATTLIST productos
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT producto (nombre,descripcion,precio)>
+<!ATTLIST producto
+  xmlns CDATA #FIXED ''
+  xmlns:xsi CDATA #FIXED 'http://www.w3.org/2001/XMLSchema-instance'
+  ean CDATA #REQUIRED
+  xsi:type NMTOKEN #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT descripcion (#PCDATA)>
+<!ATTLIST descripcion
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio
+  xmlns CDATA #FIXED ''>

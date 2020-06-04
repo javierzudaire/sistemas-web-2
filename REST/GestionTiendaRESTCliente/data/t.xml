@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tienda nombre="B">
+    <direccion>B</direccion>
+    <telefono>2</telefono>
+    <productos>
+        <producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="1">
+            <nombre>A</nombre>
+            <descripcion>A</descripcion>
+            <precio>2.0</precio>
+        </producto>
+        <producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="producto" ean="2">
+            <nombre>C</nombre>
+            <descripcion>B</descripcion>
+            <precio>5.0</precio>
+        </producto>
+    </productos>
+</tienda>
